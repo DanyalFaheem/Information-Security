@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<!-- Simple form to get username password -->
+<form class="form" method="post">
+  <ul class="fieldlist">
+      <label for="simple-input"> UserName</label>
+      <input id="simple-input1" name="userid" type="text" class="k-textbox" style="width: 100%;">
+      <label for="simple-input">Password</label>
+      <input id="simple-input2" name="pwd" type="password" class="k-textbox" style="width: 100%;">
+      <input id="button" type="submit">
+  </ul>
+</form>
+
+<!-- View the entered data in a div -->
+<button onclick=appendData()>View Users</button>
+
+
+
+<script type="text/javascript" src="script.js"></script>
+<div id="users"></div>
+</body>
+</html>
