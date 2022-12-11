@@ -1,37 +1,26 @@
-# ddos_simulation
+# ddos_simulation and dos_prevention
+
+Originally forked from https://github.com/ricardojoserf/ddos_simulation. 
+
+Includes features such as 4 attacks running in parallel to attack a target IP. Moreover, there is an option to extract all the available IPs and MACs on a network using Fing CLI and then attack while being spoofed as those IPs.
+
+Server.py file has a methodoloy implemented using AMS algorithm to calculate surprise number to check for DoS attack and block any suspicious IPs.
 
 DDoS simulation written in Python using "scapy" and "multiprocessing" libraries. Used for educational purposes
-
-![Screenshot](https://i.imgur.com/f9yRPDP.png)
-
 
 
 ## Options:
 
-There are 3 different DDoS attacks:
+There are 4 different DDoS attacks:
 
-- Flood 
+- SYN Flood 
 
 - Teardrop 
 
 - Black nurse
 
+- Ether Flood
 
-You can set different options filling the "config.py" file:
-
-- IP address
-
-- Number of IPs
-
-- Number of packets per IP
-
-- Interface
-
-- Type of attack
-
-- Origin of IP addresses ("ips.txt" file or random addresses)
-
-- Threads
 
 
 
@@ -48,6 +37,8 @@ Python 3.x:
 ```
 pip3 install scapy
 ```
+
+You should also have Fing CLI installed. Can be installed at https://www.fing.com/products/development-toolkit.
 
 ## Note
 
